@@ -1,5 +1,5 @@
 Arguments: 
-  D:\soft\node\node.exe D:\soft\node\node_global\node_modules\yarn\bin\yarn.js add vite
+  D:\soft\node\node.exe D:\soft\node\node_global\node_modules\yarn\bin\yarn.js add sass --save
 
 PATH: 
   C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\soft\git\Git\cmd;D:\soft\java\java8\bin;D:\soft\node\;D:\soft\node\node_global;D:\soft\erlang\erl10.4\bin;D:\soft\rabbitMq\rabbitmq_server-3.7.17\sbin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\majf\AppData\Local\Microsoft\WindowsApps;"D:\soft\java\java8\bin;";C:\Users\majf\AppData\Roaming\npm;D:\soft\Microsoft VS Code\bin
@@ -14,7 +14,12 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'D:\project\vue_project\alex-vue3\node_modules\esbuild\esbuild.exe'
+  SyntaxError: D:\project\vue_project\alex-vue3\package.json: Unexpected token y in JSON at position 218
+      at JSON.parse (<anonymous>)
+      at D:\soft\node\node_global\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (D:\soft\node\node_global\node_modules\yarn\lib\cli.js:310:30)
+      at D:\soft\node\node_global\node_modules\yarn\lib\cli.js:321:13
 
 npm manifest: 
   {
@@ -27,7 +32,9 @@ npm manifest:
       "serve": "vite preview"
     },
     "dependencies": {
-      "vue": "^3.0.5"
+      "element-plus": "^1.0.2-beta.40",yarn 
+      "vue": "^3.0.5",
+      "vue-router": "^4.0.1"
     },
     "devDependencies": {
       "@vitejs/plugin-vue": "^1.2.1",
@@ -62,6 +69,16 @@ Lockfile:
       "@babel/helper-validator-identifier" "^7.12.11"
       lodash "^4.17.19"
       to-fast-properties "^2.0.0"
+  
+  "@popperjs/core@^2.4.4":
+    version "2.9.2"
+    resolved "https://registry.npm.taobao.org/@popperjs/core/download/@popperjs/core-2.9.2.tgz?cache=0&sync_timestamp=1617290098226&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40popperjs%2Fcore%2Fdownload%2F%40popperjs%2Fcore-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
+    integrity sha1-rep7aVPLs0ZRdmsFSEaOdDxqI1M=
+  
+  "@types/lodash@^4.14.161":
+    version "4.14.168"
+    resolved "https://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
+    integrity sha1-/iRjLnm3rePxMoka//hsql5c4Ag=
   
   "@vitejs/plugin-vue@^1.2.1":
     version "1.2.1"
@@ -146,6 +163,11 @@ Lockfile:
     resolved "https://registry.npm.taobao.org/@vue/shared/download/@vue/shared-3.0.11.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fshared%2Fdownload%2F%40vue%2Fshared-3.0.11.tgz#20d22dd0da7d358bb21c17f9bde8628152642c77"
     integrity sha1-INIt0Np9NYuyHBf5vehigVJkLHc=
   
+  async-validator@^3.4.0:
+    version "3.5.1"
+    resolved "https://registry.npm.taobao.org/async-validator/download/async-validator-3.5.1.tgz?cache=0&sync_timestamp=1605751734916&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fasync-validator%2Fdownload%2Fasync-validator-3.5.1.tgz#cd62b9688b2465f48420e27adb47760ab1b5559f"
+    integrity sha1-zWK5aIskZfSEIOJ620d2CrG1VZ8=
+  
   big.js@^5.2.2:
     version "5.2.2"
     resolved "https://registry.npm.taobao.org/big.js/download/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
@@ -177,6 +199,25 @@ Lockfile:
     version "2.6.16"
     resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.16.tgz#544d69f547013b85a40d15bff75db38f34fe9c39"
     integrity sha1-VE1p9UcBO4WkDRW/912zjzT+nDk=
+  
+  dayjs@1.x:
+    version "1.10.4"
+    resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
+    integrity sha1-jlRKm4aD9heD9XCYCoqA6vVKseI=
+  
+  element-plus@^1.0.2-beta.40:
+    version "1.0.2-beta.40"
+    resolved "https://registry.npm.taobao.org/element-plus/download/element-plus-1.0.2-beta.40.tgz?cache=0&sync_timestamp=1618372698493&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felement-plus%2Fdownload%2Felement-plus-1.0.2-beta.40.tgz#30fc9b161496ae587fab86235c80b728ea43d909"
+    integrity sha1-MPybFhSWrlh/q4YjXIC3KOpD2Qk=
+    dependencies:
+      "@popperjs/core" "^2.4.4"
+      "@types/lodash" "^4.14.161"
+      async-validator "^3.4.0"
+      dayjs "1.x"
+      lodash "^4.17.20"
+      mitt "^2.1.0"
+      normalize-wheel "^1.0.1"
+      resize-observer-polyfill "^1.5.1"
   
   emojis-list@^3.0.0:
     version "3.0.0"
@@ -265,7 +306,7 @@ Lockfile:
     resolved "https://registry.npm.taobao.org/lodash.camelcase/download/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
     integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
   
-  lodash@^4.17.19:
+  lodash@^4.17.19, lodash@^4.17.20:
     version "4.17.21"
     resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
     integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
@@ -296,10 +337,20 @@ Lockfile:
     resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.5.tgz?cache=0&sync_timestamp=1602337228360&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fminimist%2Fdownload%2Fminimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
     integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
   
+  mitt@^2.1.0:
+    version "2.1.0"
+    resolved "https://registry.npm.taobao.org/mitt/download/mitt-2.1.0.tgz#f740577c23176c6205b121b2973514eade1b2230"
+    integrity sha1-90BXfCMXbGIFsSGylzUU6t4bIjA=
+  
   nanoid@^3.1.22:
     version "3.1.22"
     resolved "https://registry.npm.taobao.org/nanoid/download/nanoid-3.1.22.tgz?cache=0&sync_timestamp=1615820315842&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnanoid%2Fdownload%2Fnanoid-3.1.22.tgz#b35f8fb7d151990a8aebd5aa5015c03cf726f844"
     integrity sha1-s1+Pt9FRmQqK69WqUBXAPPcm+EQ=
+  
+  normalize-wheel@^1.0.1:
+    version "1.0.1"
+    resolved "https://registry.npm.taobao.org/normalize-wheel/download/normalize-wheel-1.0.1.tgz#aec886affdb045070d856447df62ecf86146ec45"
+    integrity sha1-rsiGr/2wRQcNhWRH32Ls+GFG7EU=
   
   path-parse@^1.0.6:
     version "1.0.6"
@@ -372,6 +423,11 @@ Lockfile:
       nanoid "^3.1.22"
       source-map "^0.6.1"
   
+  resize-observer-polyfill@^1.5.1:
+    version "1.5.1"
+    resolved "https://registry.npm.taobao.org/resize-observer-polyfill/download/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+    integrity sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ=
+  
   resolve@^1.19.0:
     version "1.20.0"
     resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.20.0.tgz?cache=0&sync_timestamp=1613054898763&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fresolve%2Fdownload%2Fresolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
@@ -428,6 +484,11 @@ Lockfile:
       rollup "^2.38.5"
     optionalDependencies:
       fsevents "~2.3.1"
+  
+  vue-router@^4.0.1:
+    version "4.0.6"
+    resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.6.tgz?cache=0&sync_timestamp=1617697843139&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-router%2Fdownload%2Fvue-router-4.0.6.tgz#91750db507d26642f225b0ec6064568e5fe448d6"
+    integrity sha1-kXUNtQfSZkLyJbDsYGRWjl/kSNY=
   
   vue@^3.0.5:
     version "3.0.11"
