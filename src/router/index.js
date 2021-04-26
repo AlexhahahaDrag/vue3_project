@@ -1,6 +1,16 @@
-import { createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory, routerKey} from 'vue-router'
 
-const routes = [
+export const routes = [
+    {
+        path: '/404',
+        name: '404',
+        component: () => import('@v/error/404.vue')
+    },
+    {
+        path: '/401',
+        name: '401',
+        component: () => import('@v/error/401.vue')
+    },
     {
         path: '/',
         name: 'Home',
@@ -8,9 +18,8 @@ const routes = [
     }
 ]
 
-export default createRouter(
-    {
-        history: createWebHistory(),
-        routes
-    }
-)
+const router = new Router({
+    scrollBehavior: () => ({y : 0}),
+    routes
+})
+export default routerKey;
